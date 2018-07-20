@@ -37,18 +37,5 @@
       "quantity": 1,
       "size": "Performance-M"
     }
-  },
-  "image": "heroku/ruby",
-  "buildpacks": [
-    {
-      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
-    }
-  ],
-  "environments": {
-    "worker": {
-      "scripts": {
-        "worker": "node build/server"
-      }
-    }
   }
 }
