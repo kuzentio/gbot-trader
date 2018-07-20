@@ -45,7 +45,7 @@
     }
   ],
   "environments": {
-    "test": {
+    "worker": {
       "scripts": {
         "worker": "node build/server"
       }
