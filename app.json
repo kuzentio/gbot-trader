@@ -3,7 +3,7 @@
   "description": "This app does one little thing, and does it well.",
   "repository": "https://github.com/steeply/gbot-trader",
   "scripts": {
-    "postdeploy": "make init"
+    "postdeploy": "npm i"
   },
   "env": {
     "KEY": {
