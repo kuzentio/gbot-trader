@@ -1,0 +1,54 @@
+{
+  "name": "Gbot trade",
+  "description": "This app does one little thing, and does it well.",
+  "repository": "https://github.com/steeply/gbot-trader",
+  "scripts": {
+    "postdeploy": "npm i"
+  },
+  "env": {
+    "KEY": {
+      "value": "992ba48612564b72af9757afdf444121"
+    },
+    "SECRET": {
+      "value": "a9eb1d61422b4b8a9253e20949be66d5"
+    },
+    "EXCHANGE": {
+      "value": "bittrex"
+    },
+    "NAME_COIN": {
+      "value": "BTC"
+    },
+    "NAME_COIN_TWO": {
+      "value": "ETH"
+    },
+    "DEPOSIT_LIMIT_PERCENT": {
+      "value": "100"
+    },
+    "STEP_BREAKEVEN_PERCENT": {
+      "value": "1"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Performance-M"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "Performance-M"
+    }
+  },
+  "image": "heroku/ruby",
+  "buildpacks": [
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "worker": "node build/server"
+      }
+    }
+  }
+}
