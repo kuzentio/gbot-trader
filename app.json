@@ -31,11 +31,11 @@
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "Performance-M"
+      "size": "Standart-1X"
     },
     "worker": {
       "quantity": 1,
-      "size": "Performance-M"
+      "size": "Standart-1X"
     }
   }
 }
